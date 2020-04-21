@@ -13,7 +13,7 @@ public class Order {
     private int id;
     private String description;
 
-    @OneToOne(targetEntity = AppUser.class)
+    @ManyToOne(targetEntity = AppUser.class)
     @JoinColumn(name = "user_id", referencedColumnName = "id", nullable = false)
     private AppUser user;
 

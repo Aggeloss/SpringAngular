@@ -17,10 +17,6 @@ import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.context.annotation.Bean;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
 import static com.apiproject.tect.security.SecurityConstants.EXPIRATION_TIME;
 import static com.apiproject.tect.security.SecurityConstants.SIGN_UP_URL;
 

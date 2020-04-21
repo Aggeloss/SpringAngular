@@ -1,6 +1,7 @@
 package com.apiproject.tect.entities;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table(name = "user")
@@ -14,8 +15,8 @@ public class AppUser {
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private Profile profile;
 
-    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
-    private Order order;
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private Set<Order> order;
 
     public AppUser(long id, String username, String password) {
         this.id = id;
